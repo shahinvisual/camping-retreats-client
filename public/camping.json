@@ -1,0 +1,254 @@
+[
+  {
+    "ID": "CR001",
+    "Adventure Title": "Coastal Trailblazer Expedition",
+    "Image": "https://i.ibb.co.com/bM9fPCqK/premium-photo-1682698235878-cd2a2a20ed0c.jpg",
+    "Category Name": "Coastal Camping",
+    "Short Description": "A multi-day trek along rugged coastline trails, featuring stunning ocean views and hidden beach campsites.",
+    "Adventure Cost": 450.00,
+    "Booking Availability": true,
+    "Location": "Big Sur, California, USA",
+    "Duration": "4 Days / 3 Nights",
+    "Adventure Level": "Moderate",
+    "Included Items": [
+      "Tent & sleeping bag rental",
+      "Daily gourmet meals",
+      "Guided hiking tours",
+      "Permits & fees"
+    ],
+    "Eco-Friendly Features": [
+      "Solar-powered camp lighting",
+      "Zero-waste food preparation",
+      "Biodegradable toiletries provided"
+    ],
+    "Max Group Size": 12,
+    "Special Instructions": [
+      "Must be comfortable with steep inclines.",
+      "Bring waterproof jacket and sturdy hiking boots."
+    ]
+  },
+  {
+    "ID": "CR002",
+    "Adventure Title": "Mountain Peak Wilderness Escape",
+    "Image": "https://i.ibb.co.com/XxW645bP/photo-1760451747526-9e93d94a9843.jpg",
+    "Category Name": "High-Altitude Camping",
+    "Short Description": "Experience remote wilderness camping above the tree line with breathtaking alpine views and clear night skies.",
+    "Adventure Cost": 680.00,
+    "Booking Availability": true,
+    "Location": "Rocky Mountain National Park, USA",
+    "Duration": "3 Days / 2 Nights",
+    "Adventure Level": "Strenuous",
+    "Included Items": [
+      "High-altitude sleeping system",
+      "Certified mountain guide",
+      "Emergency satellite communication",
+      "Cooking gear"
+    ],
+    "Eco-Friendly Features": [
+      "Leave No Trace certified guides",
+      "Composting toilet facilities",
+      "Battery recycling station"
+    ],
+    "Max Group Size": 8,
+    "Special Instructions": [
+      "Mandatory pre-trip fitness assessment.",
+      "Altitude sickness briefing required."
+    ]
+  },
+  {
+    "ID": "CR003",
+    "Adventure Title": "Desert Stargazer Oasis",
+    "Image": "https://i.ibb.co.com/fdCspgy0/photo-1613169620329-6785c004d900.jpg",
+    "Category Name": "Desert Camping",
+    "Short Description": "A peaceful retreat into the vast desert landscape, perfect for stargazing and photography workshops.",
+    "Adventure Cost": 320.00,
+    "Booking Availability": false,
+    "Location": "Mojave Desert, Nevada, USA",
+    "Duration": "2 Days / 1 Night",
+    "Adventure Level": "Easy",
+    "Included Items": [
+      "Tent & cot setup",
+      "Dinner and breakfast provided",
+      "Telescope access",
+      "Water supply"
+    ],
+    "Eco-Friendly Features": [
+      "Water conservation education",
+      "Reusable water bottles provided",
+      "Minimal light pollution protocols"
+    ],
+    "Max Group Size": 15,
+    "Special Instructions": [
+      "Temperatures drop significantly at night.",
+      "No open fires permitted; propane stoves only."
+    ]
+  },
+  {
+    "ID": "CR004",
+    "Adventure Title": "Forest River Kayak & Camp",
+    "Image": "https://i.ibb.co.com/7dzdhTHR/photo-1653379714531-47f3f491c509.jpg",
+    "Category Name": "River Camping",
+    "Short Description": "Paddle down a scenic forest river and camp overnight on secluded sandbars. All gear and instruction provided.",
+    "Adventure Cost": 510.00,
+    "Booking Availability": true,
+    "Location": "Olympic National Forest, Washington, USA",
+    "Duration": "3 Days / 2 Nights",
+    "Adventure Level": "Moderate",
+    "Included Items": [
+      "Kayaks and safety gear",
+      "River guide & rescue training",
+      "Camp kitchen setup",
+      "Fishing permits"
+    ],
+    "Eco-Friendly Features": [
+      "Paddling over motor boats to reduce noise pollution",
+      "Use of certified non-toxic sunscreen",
+      "River clean-up participation"
+    ],
+    "Max Group Size": 10,
+    "Special Instructions": [
+      "Must know how to swim.",
+      "Fishing licenses are required for participants who wish to fish."
+    ]
+  },
+  {
+    "ID": "CR005",
+    "Adventure Title": "Arctic Lights Winter Camp",
+    "Image": "https://i.ibb.co.com/tMTHzZHP/photo-1610620746460-de78cf3d1705.jpg",
+    "Category Name": "Extreme Winter Camping",
+    "Short Description": "An extreme cold-weather camping experience focused on witnessing the Aurora Borealis and survival training.",
+    "Adventure Cost": 1200.00,
+    "Booking Availability": true,
+    "Location": "Fairbanks, Alaska, USA",
+    "Duration": "5 Days / 4 Nights",
+    "Adventure Level": "Expert",
+    "Included Items": [
+      "Extreme cold weather gear (loaner)",
+      "Heated tents",
+      "Aurora forecast tracking",
+      "Snowshoe rental"
+    ],
+    "Eco-Friendly Features": [
+      "Use of reusable thermal packaging",
+      "Focus on low-impact travel on snow",
+      "Certified carbon-neutral fuel usage"
+    ],
+    "Max Group Size": 6,
+    "Special Instructions": [
+      "Comprehensive medical release required.",
+      "Must have prior winter camping experience."
+    ]
+  },
+  {
+    "ID": "CR006",
+    "Adventure Title": "Beginner Backyard Hammock Camp",
+    "Image": "https://i.ibb.co.com/Mk6K1xpk/photo-1698731036724-518ca5c61739.jpg",
+    "Category Name": "Introductory Camping",
+    "Short Description": "A safe, beginner-friendly retreat focused on learning basic camp setup, knot tying, and safe fire building.",
+    "Adventure Cost": 150.00,
+    "Booking Availability": true,
+    "Location": "Local Wilderness Area, Texas, USA",
+    "Duration": "1 Day / 1 Night",
+    "Adventure Level": "Beginner",
+    "Included Items": [
+      "Hammock and tarp setup kit",
+      "Campfire safety instruction",
+      "S'mores ingredients",
+      "Hot cocoa"
+    ],
+    "Eco-Friendly Features": [
+      "100% locally sourced firewood",
+      "Digital manual and checklists (no paper)",
+      "Recycling and compost bins at site"
+    ],
+    "Max Group Size": 20,
+    "Special Instructions": [
+      "Aimed at families and first-time campers.",
+      "Must adhere to quiet hours after 10 PM."
+    ]
+  },
+  {
+    "ID": "CR007",
+    "Adventure Title": "Volcanic Vista Basecamp",
+    "Image": "https://i.ibb.co.com/1YXtGxzx/photo-1626171940878-41008a864ce2.jpg",
+    "Category Name": "Geothermal Camping",
+    "Short Description": "Camping near geothermal areas with unique landscapes, hot springs access, and geology lessons.",
+    "Adventure Cost": 550.00,
+    "Booking Availability": true,
+    "Location": "Yellowstone National Park, Wyoming, USA",
+    "Duration": "3 Days / 2 Nights",
+    "Adventure Level": "Moderate",
+    "Included Items": [
+      "Guided geology tour",
+      "Access to private hot spring",
+      "Park entrance fees",
+      "Camp stove and fuel"
+    ],
+    "Eco-Friendly Features": [
+      "Strict trail adherence to protect geothermal features",
+      "Use of natural, biodegradable cleaning products",
+      "Education on thermal ecology"
+    ],
+    "Max Group Size": 10,
+    "Special Instructions": [
+      "Stay on marked trails at all times.",
+      "Wildlife safety briefing is mandatory."
+    ]
+  },
+  {
+    "ID": "CR008",
+    "Adventure Title": "Canyon Rim Overnight",
+    "Image": "https://i.ibb.co.com/ZRM1vqdd/premium-photo-1661963459430-6c65fbca400d.jpg",
+    "Category Name": "Canyon Camping",
+    "Short Description": "A strenuous hike followed by a night camping on the rim of a breathtaking canyon with sunset and sunrise views.",
+    "Adventure Cost": 420.00,
+    "Booking Availability": false,
+    "Location": "Grand Canyon National Park, Arizona, USA",
+    "Duration": "2 Days / 1 Night",
+    "Adventure Level": "Strenuous",
+    "Included Items": [
+      "Backpacking gear rental",
+      "Certified wilderness first responder guide",
+      "All necessary backcountry permits",
+      "Nutrient-dense dehydrated meals"
+    ],
+    "Eco-Friendly Features": [
+      "Pack-it-out waste system",
+      "Water filter usage (no single-use plastic bottles)",
+      "Minimized fire impact (small contained fire pit)"
+    ],
+    "Max Group Size": 8,
+    "Special Instructions": [
+      "Participants must carry their own gear and water.",
+      "No shade is available during the midday hike."
+    ]
+  },
+  {
+    "ID": "CR009",
+    "Adventure Title": "Lakefront Glamping Retreat",
+    "Image": "https://i.ibb.co.com/Sw52Kf6N/premium-photo-1718204438428-d3a5438605bd.jpg",
+    "Category Name": "Luxury Glamping",
+    "Short Description": "Enjoy the tranquility of a private lakefront setting in a spacious, fully furnished luxury canvas tent.",
+    "Adventure Cost": 899.00,
+    "Booking Availability": true,
+    "Location": "Adirondack Mountains, New York, USA",
+    "Duration": "3 Days / 2 Nights",
+    "Adventure Level": "Relaxed",
+    "Included Items": [
+      "Queen-sized bed with linens",
+      "Private dock access with kayak",
+      "Daily breakfast basket",
+      "On-site concierge service"
+    ],
+    "Eco-Friendly Features": [
+      "Tent structures made from sustainable materials",
+      "Low-flow plumbing in private washroom",
+      "Use of non-toxic, eco-certified cleaning supplies"
+    ],
+    "Max Group Size": 4,
+    "Special Instructions": [
+      "Pets are welcome for an additional fee.",
+      "Fishing is catch-and-release only."
+    ]
+  }
+]
