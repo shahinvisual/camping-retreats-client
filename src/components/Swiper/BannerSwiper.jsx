@@ -1,15 +1,15 @@
-// import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
-
 // import required modules
 import { Pagination } from 'swiper/modules';
+import ArcticLights from '../../assets/Arctic Lights Winter Camp.jpg'
+import VolcanicBasecamp from '../../assets/Volcanic Vista Basecamp.jpg'
+import RiverKayak from '../../assets/Forest River Kayak & Camp.jpg'
+import DesertStargazer from '../../assets/Desert Stargazer Oasis.jpg'
+
 const BannerSwiper = () => {
     return (
         <div>
@@ -21,15 +21,10 @@ const BannerSwiper = () => {
                 modules={[Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                <SwiperSlide><img src={ArcticLights} alt="" /></SwiperSlide>
+                <SwiperSlide><img src={VolcanicBasecamp} alt="" /></SwiperSlide>
+                <SwiperSlide><img src={RiverKayak} alt="" /></SwiperSlide>
+                <SwiperSlide><img src={DesertStargazer} alt="" /></SwiperSlide>
             </Swiper>
         </div>
     );
