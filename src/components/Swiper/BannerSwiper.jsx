@@ -12,19 +12,19 @@ import DesertStargazer from '../../assets/Desert Stargazer Oasis.jpg'
 
 const BannerSwiper = () => {
     return (
-        <div>
+        <div className='mt-8'>
             <Swiper
                 spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}
                 modules={[Pagination]}
-                className="mySwiper"
+                className="mySwiper h-[250px] sm:h-[350px] md:h-[450px] rounded-xl"
             >
-                <SwiperSlide><img src={ArcticLights} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={VolcanicBasecamp} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={RiverKayak} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={DesertStargazer} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='h-full w-full object-cover' src={ArcticLights} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='h-full w-full object-cover' src={VolcanicBasecamp} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='h-full w-full object-cover' src={RiverKayak} alt="" /></SwiperSlide>
+                <SwiperSlide><img className='h-full w-full object-cover' src={DesertStargazer} alt="" /></SwiperSlide>
             </Swiper>
         </div>
     );
