@@ -4,6 +4,7 @@ const Navbar = () => {
     const navLink = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/updateProfile'>Update Profile</Link></li>
+        <li><Link to='/login'>Login</Link></li>
     </>
     return (
         <div>
@@ -27,7 +28,6 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Login</a>
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img
