@@ -1,3 +1,4 @@
+import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -22,6 +23,7 @@ const Login = () => {
                                 <button className="btn btn-neutral mt-4">Login</button>
                                 <p className="text-center mt-3">Don't have an account? <Link to='/register' className="font-medium text-sm">Register</Link></p>
                             </fieldset>
+                            <button className='btn btn-outline'><FcGoogle size={20}></FcGoogle>Continue with Google</button>
                         </div>
                     </div>
                 </div>
