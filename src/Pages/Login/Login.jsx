@@ -1,7 +1,45 @@
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
+import Swal from "sweetalert2";
+import { useState } from "react";
 
 const Login = () => {
+    const { loginWithGoogle, loginWithPassword } = useAuth();
+    const [error, setError] = useState('')
+    const navigate = useNavigate();
+    // Login in Google-----------------------
+    const handleGoogleLogin = () => {
+        loginWithGoogle()
+            .then(result => {
+                console.log(result);
+                navigate('/')
+            }).catch(error => {
+                setError(error.message);
+            })
+    };
+    // Email & Password login-----------------
+    const handleLoginWithEmailPassword = (e) => {
+        setError('')
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        loginWithPassword(email, password)
+            .then(result => {
+                console.log(result);
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Successfully Login!",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                navigate('/')
+            }).catch(error => {
+                setError(error.message);
+            })
+    }
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
@@ -14,16 +52,19 @@ const Login = () => {
                     </div>
                     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div className="card-body">
-                            <fieldset className="fieldset">
+                            <form onSubmit={handleLoginWithEmailPassword} className="fieldset">
+                                {/* Email Field------------------ */}
                                 <label className="label">Email</label>
-                                <input type="email" className="input" placeholder="Email" />
+                                <input type="email" name='email' className="input" placeholder="Email" required />
+                                {/* Password-URL Field------------------ */}
                                 <label className="label">Password</label>
-                                <input type="password" className="input" placeholder="Password" />
+                                <input type="password" name='password' className="input" placeholder="Password" required />
                                 <div><a className="link link-hover">Forgot password?</a></div>
                                 <button className="btn btn-neutral mt-4">Login</button>
                                 <p className="text-center mt-3">Don't have an account? <Link to='/register' className="font-medium text-sm">Register</Link></p>
-                            </fieldset>
-                            <button className='btn btn-outline'><FcGoogle size={20}></FcGoogle>Continue with Google</button>
+                            </form>
+                            <button onClick={handleGoogleLogin} className='btn btn-outline'><FcGoogle size={20}></FcGoogle>Continue with Google</button>
+                            <p className='text-xl font-semibold text-error'>{error}</p>
                         </div>
                     </div>
                 </div>
