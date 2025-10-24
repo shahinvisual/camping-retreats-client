@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home";
 import AdventureDetailItem from "../components/AdventureDetail/AdventureDetailItem";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "../Private/PrivateRoute";
+import ShowAdventureDetail from "../components/AdventureDetail/ShowAdventureDetail";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +20,11 @@ const router = createBrowserRouter([
     },
     {
         path: '/cardDetails/:id',
-        element: <AdventureDetailItem />
+        element: <PrivateRoute><AdventureDetailItem /></PrivateRoute>
+    },
+    {
+        path: 'adventureDetails',
+        element: <ShowAdventureDetail />
     },
     {
         path: 'login',

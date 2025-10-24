@@ -1,5 +1,5 @@
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
 import { useState } from "react";
@@ -7,13 +7,16 @@ import { useState } from "react";
 const Login = () => {
     const { loginWithGoogle, loginWithPassword } = useAuth();
     const [error, setError] = useState('')
+    const location = useLocation();
+    const from = location?.state?.from?.pathname || '/';
+    console.log(location);
     const navigate = useNavigate();
     // Login in Google-----------------------
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
                 console.log(result);
-                navigate('/')
+                navigate(from, { relative: true })
             }).catch(error => {
                 setError(error.message);
             })
@@ -28,6 +31,7 @@ const Login = () => {
         loginWithPassword(email, password)
             .then(result => {
                 console.log(result);
+                navigate(from, { relative: true })
                 Swal.fire({
                     position: "top-end",
                     icon: "success",

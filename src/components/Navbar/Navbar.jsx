@@ -44,7 +44,7 @@ const Navbar = () => {
                         <div className="w-10 rounded-full">
                             {
                                 user && <>
-                                    <img src={user?.photoURL} alt="" />
+                                    <img className="hover:user.displayName" src={user?.photoURL} alt="" />
                                     <h2 className="font-black">{user?.displayName}</h2>
                                 </>
                             }

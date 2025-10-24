@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import { PiCurrencyDollarLight } from 'react-icons/pi';
 import { CiLocationOn } from 'react-icons/ci';
@@ -20,6 +20,16 @@ const AdventureDetailItem = () => {
     }, [id])
     if (!showCard) {
         return <span className="loading loading-dots loading-lg"></span>
+    };
+    const now = new Date();
+    const currentHours = now.getHours();
+    console.log(now, currentHours);
+    const handleExpertWithTalk = () => {
+        if (currentHours >= 10 && currentHours < 20) {
+            window.open('https://meet.google.com/landing?hs=197&authuser=0')
+        } else {
+            document.getElementById('my_modal_1').showModal()
+        }
     }
     const {
         Title,
@@ -77,9 +87,24 @@ const AdventureDetailItem = () => {
                                 }
                             </div>
                         </div>
+                        <button onClick={handleExpertWithTalk} className="btn btn-wide btn-outline">Talk with Expert</button>
+
                     </div>
                 </div>
             </div>
+            {/* Open the modal using document.getElementById('ID').showModal() method */}
+            <dialog id="my_modal_1" className="modal">
+                <div className="modal-box">
+                    <h3 className="font-bold text-lg">🕔 Sorry!</h3>
+                    <p className="py-4">Our experts are available from <b>10:00 AM</b> – <b>8:00 PM</b>.</p>
+                    <div className="modal-action">
+                        <form method="dialog">
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     );
 };
