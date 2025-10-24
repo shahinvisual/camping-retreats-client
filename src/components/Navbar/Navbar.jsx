@@ -9,6 +9,7 @@ const Navbar = () => {
     const navLink = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/updateProfile'>Update Profile</Link></li>
+        <li><Link to='/userProfile'>User Profile</Link></li>
         {
             user ?
                 <div>
@@ -44,7 +45,7 @@ const Navbar = () => {
                         <div className="w-10 rounded-full">
                             {
                                 user && <>
-                                    <img className="hover:user.displayName" src={user?.photoURL} alt="" />
+                                    <img src={user?.photoURL} alt="" />
                                     <h2 className="font-black">{user?.displayName}</h2>
                                 </>
                             }

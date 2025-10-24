@@ -6,6 +6,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "../Private/PrivateRoute";
 import ShowAdventureDetail from "../components/AdventureDetail/ShowAdventureDetail";
+import UserProfile from "../Pages/UserProfile/UserProfile";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
     {
         path: '/cardDetails/:id',
         element: <PrivateRoute><AdventureDetailItem /></PrivateRoute>
+    },
+    {
+        path: 'userProfile',
+        element: <PrivateRoute><UserProfile /></PrivateRoute>
+    },
+    {
+        path:'updateProfile',
+        element: <PrivateRoute><UpdateProfile/></PrivateRoute>
     },
     {
         path: 'adventureDetails',

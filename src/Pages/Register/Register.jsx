@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 import { useState } from 'react';
 
 const Register = () => {
-    const { loginWithGoogle, userRegister } = useAuth();
+    const { loginWithGoogle, userRegister, userProfileUpdate } = useAuth();
     const [error, setError] = useState('')
     const navigate = useNavigate();
     // Login With Google------------------
@@ -34,6 +34,20 @@ const Register = () => {
             return setError("Password must be at least 6 characters long and include uppercase, lowercase, number, and special character.")
         }
         userRegister(email, password)
+            .then(res => {
+                userProfileUpdate(name, photo_url)
+                    .then(res => {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: "Updated Profile!",
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }).catch(error => {
+                        setError(error.message)
+                    })
+            })
             .then(result => {
                 console.log(result);
                 Swal.fire({
