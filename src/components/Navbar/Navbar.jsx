@@ -13,7 +13,7 @@ const Navbar = () => {
         {
             user ?
                 <div>
-                    <li><Link onClick={handleLogOut}>LogOut</Link></li>
+                    <li><Link onClick={handleLogOut}>Logout</Link></li>
                 </div>
                 :
                 <li><Link to='/login'>Login</Link></li>
@@ -44,10 +44,9 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             {
-                                user && <>
+                                user && <Link to='/userProfile'>
                                     <img src={user?.photoURL} alt="" />
-                                    <h2 className="font-black">{user?.displayName}</h2>
-                                </>
+                                </Link>
                             }
                         </div>
                     </div>

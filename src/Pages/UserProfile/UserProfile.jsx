@@ -1,12 +1,14 @@
 import { FaUserEdit } from 'react-icons/fa';
 import useAuth from '../../Hooks/useAuth';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const UserProfile = () => {
     const { user } = useAuth();
 
     return (
         <div className="px-4 py-8">
+            <Helmet><title>Camping Retreats || User Profile</title></Helmet>
             {/* Title */}
             <h1 className="text-center text-xl md:text-2xl font-semibold mb-6">
                 Welcome to <span className="font-black">{user?.displayName}</span>

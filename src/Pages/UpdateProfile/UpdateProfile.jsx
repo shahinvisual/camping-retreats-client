@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2';
 import useAuth from '../../Hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const UpdateProfile = () => {
     const { user, userProfileUpdate } = useAuth();
@@ -26,6 +27,7 @@ const UpdateProfile = () => {
     }
     return (
         <div>
+            <Helmet><title>Camping Retreats || Update Profile</title></Helmet>
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">

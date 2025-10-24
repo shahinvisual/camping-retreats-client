@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import Swal from 'sweetalert2';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
     const { loginWithGoogle, userRegister, userProfileUpdate } = useAuth();
@@ -66,6 +67,7 @@ const Register = () => {
     }
     return (
         <div>
+            <Helmet><title>Camping Retreats || Register Account</title></Helmet>
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
