@@ -10,7 +10,7 @@ const AdventureDetailItem = () => {
     const [showCard, setShowCard] = useState()
     const { id } = useParams();
     useEffect(() => {
-        fetch('../../../public/camping.json')
+        fetch('/camping.json')
             .then(res => res.json())
             .then(data => {
                 const cardData = data.find(item => item.ID === id);
