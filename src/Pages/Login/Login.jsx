@@ -10,13 +10,11 @@ const Login = () => {
     const [error, setError] = useState('')
     const location = useLocation();
     const from = location?.state?.from?.pathname || '/';
-    console.log(location);
     const navigate = useNavigate();
     // Login in Google-----------------------
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
-                console.log(result);
                 navigate(from, { relative: true })
             }).catch(error => {
                 setError(error.message);
@@ -31,7 +29,6 @@ const Login = () => {
         const password = form.password.value;
         loginWithPassword(email, password)
             .then(result => {
-                console.log(result);
                 navigate(from, { relative: true })
                 Swal.fire({
                     position: "top-end",
@@ -40,7 +37,6 @@ const Login = () => {
                     showConfirmButton: false,
                     timer: 1500
                 });
-                navigate('/')
             }).catch(error => {
                 setError(error.message);
             })
@@ -65,7 +61,7 @@ const Login = () => {
                                 {/* Password-URL Field------------------ */}
                                 <label className="label">Password</label>
                                 <input type="password" name='password' className="input" placeholder="Password" required />
-                                <div><a className="link link-hover">Forgot password?</a></div>
+                                <div><Link to='/forgotPassword' className="link link-hover">Forgot password?</Link></div>
                                 <button className="btn btn-neutral mt-4">Login</button>
                                 <p className="text-center mt-3">Don't have an account? <Link to='/register' className="font-medium text-sm">Register</Link></p>
                             </form>

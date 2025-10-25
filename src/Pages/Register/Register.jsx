@@ -13,7 +13,6 @@ const Register = () => {
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
-                console.log(result);
                 navigate('/')
             }).catch(error => {
                 setError(error.message);
@@ -50,7 +49,6 @@ const Register = () => {
                     })
             })
             .then(result => {
-                console.log(result);
                 Swal.fire({
                     position: "top-end",
                     icon: "success",

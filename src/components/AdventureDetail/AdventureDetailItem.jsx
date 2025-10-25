@@ -15,7 +15,6 @@ const AdventureDetailItem = () => {
             .then(data => {
                 const cardData = data.find(item => item.ID === id);
                 setShowCard(cardData)
-                console.log(cardData);
             })
     }, [id])
     if (!showCard) {
@@ -23,7 +22,6 @@ const AdventureDetailItem = () => {
     };
     const now = new Date();
     const currentHours = now.getHours();
-    console.log(now, currentHours);
     const handleExpertWithTalk = () => {
         if (currentHours >= 10 && currentHours < 20) {
             window.open('https://meet.google.com/landing?hs=197&authuser=0')

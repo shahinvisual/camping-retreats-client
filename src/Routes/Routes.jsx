@@ -8,6 +8,7 @@ import PrivateRoute from "../Private/PrivateRoute";
 import ShowAdventureDetail from "../components/AdventureDetail/ShowAdventureDetail";
 import UserProfile from "../Pages/UserProfile/UserProfile";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import ForgotPassword from "../Pages/ForgotPassword/ForgotPassword";
 
 const router = createBrowserRouter([
     {
@@ -29,8 +30,8 @@ const router = createBrowserRouter([
         element: <PrivateRoute><UserProfile /></PrivateRoute>
     },
     {
-        path:'updateProfile',
-        element: <PrivateRoute><UpdateProfile/></PrivateRoute>
+        path: 'updateProfile',
+        element: <PrivateRoute><UpdateProfile /></PrivateRoute>
     },
     {
         path: 'adventureDetails',
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     {
         path: 'register',
         element: <Register />
+    },
+    {
+        path: 'forgotPassword',
+        element: <ForgotPassword />
     }
 ]);
 
